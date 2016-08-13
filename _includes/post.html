@@ -1,0 +1,45 @@
+<section class="post">
+  <header class="post-header">
+    <h2 class="post-title">{{ include.post.title }}</h2>
+    {% if include.post.tags %}
+      <div class="post-meta">
+        {% if include.type == 'home' %}
+          Written by
+          <a href="{{ "/about" | prepend: site.baseurl | prepend: site.url }}">
+            {{ include.post.author }}
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </header>
+
+  <main class="post-content">
+    {% if include.type == 'post' %}
+      {{ content }}
+    {% else %}
+      {{ include.post.description }}
+    {% endif %}
+  </main>
+
+  {% if include.type == 'post' %}
+    <footer class="post-footer">
+      <div class="post-footer-header">
+        <img class="author-avatar" alt="Luke's avatar" src="{{ site.gravatar }}">
+        <h3 class="author-name">Luke Hackett</h3>
+        <h4 class="author-title">Software Developer</h4>
+      </div>
+      <p class="post-footer-bio">
+        Luke Hackett is a Software Developer currently working for
+        <a href="https://www.sky.com">Sky</a>. Luke enjoys creating extensible,
+        functional, simple software solutions to a variety of problems, and
+        occasionally blog about his interests on this site.
+      </p>
+    </footer>
+  {% endif %}
+
+  {% if include.type == 'home' %}
+    <a class="button-small pure-button pure-button-primary" href="{{include.post.url}}">
+      Read More
+    </a>
+  {% endif %}
+</section>
