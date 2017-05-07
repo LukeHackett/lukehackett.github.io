@@ -7,12 +7,16 @@
 # Site settings
 title: Luke Hackett
 tagline: Yet another opinionated software engineering blog
+author: Luke Hackett
 description: >
   Another opinionated software engineering blog written by a full stack
   developer living in West London, United Kingdom. I create extensible,
   functional, simple software solutions to a variety of problems, and
   occasionally blog about my interests.
 url: "http://www.lukehackett.com"
+discuss: 
+  embed: "https://lukehackettcom.disqus.com/embed.js"
+  count: "//lukehackettcom.disqus.com/count.js"
 
 # social networks
 linkedin: "https://uk.linkedin.com/pub/luke-hackett/82/561/423"
