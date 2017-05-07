@@ -28,10 +28,5 @@ sass:
   sass_dir: _sass
   style: compressed
 
-# HTML Minify Options
-minify_html: true
-
-# additional plugins
-gems:
-  - jekyll-coffeescript
-  - octopress-minify-html
+# Google Analytics
+google_analytics: UA-89802036-2
