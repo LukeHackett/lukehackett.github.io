@@ -86,7 +86,6 @@ markdown: kramdown
 
 # Jekyll plugins
 plugins:
-  - jekyll-tidy
   - jekyll-feed
   - jekyll-paginate
 
