@@ -1,10 +1,15 @@
 ---
 layout: default
+pagination: 
+  enabled: true
 ---
 
 <div class="posts">
-  <h1 class="content-subhead">Recent Posts</h1>
-  {% for post in site.posts limit:5 %}
-    {% include post.html post=post type="home" %}
+  {% for post in paginator.posts %}
+    {% include post.html post=post %}
   {% endfor %}
 </div>
+
+{% if paginator.total_pages > 1 %}
+  {% include pagination.html %}
+{% endif %}

@@ -3,14 +3,6 @@ layout: post
 
 author: Luke Hackett
 title:  "Semantic Versioning: An Overview"
-date:   2015-08-02 16:44:34 +0100
-description: >
-  Semantic Versioning is a software versioning system that has been 
-  gaining popularity in recent years. With the rapid growth in software
-  development through libraries, applications and web services having a
-  standardised way of versioning software releases has never been as
-  important. In this article I'll cover the basics of Semantic 
-  Versioning as well as outlining some common gotchas.
 tags:
   - Semantic Versioning
 ---
@@ -20,6 +12,8 @@ gaining popularity in recent years. With the rapid growth in software
 development through libraries, applications and web services having a 
 standardised way of versioning software releases has never been as 
 important.    
+
+<!--excerpt-->
 
 ## What is Semantic Versioning?
 

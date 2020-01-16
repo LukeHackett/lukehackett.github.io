@@ -6,31 +6,94 @@
 
 # Site settings
 title: Luke Hackett
-tagline: Yet another opinionated software engineering blog
-author: Luke Hackett
-description: >
-  Another opinionated software engineering blog written by a full stack
-  developer living in West London, United Kingdom. I create extensible,
-  functional, simple software solutions to a variety of problems, and
-  occasionally blog about my interests.
 url: "http://www.lukehackett.com"
-discuss: 
+
+# Site Author
+about:
+  author: Luke Hackett
+  job: Software Developer
+  gravatar: "http://1.gravatar.com/avatar/5063276d68503fad5da5aa860438ca83?size=150"
+  description: |
+      Luke is a full stack developer, amateur photographer, a reader of many
+      subjects, and a global traveller who occasionally blogs about some of 
+      his interests and discoveries.
+
+# Site Navigation
+navigation:
+  - label: Posts
+    url: /
+  - label: Archive
+    url: /archive/
+  - label: Projects
+    url: /projects/
+  - label: Travel
+    url: /travel/
+  - label: About
+    url: /about/
+
+# Pagination
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/posts/:num/'
+  sort_reverse: true
+
+# Site Collections
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title
+  projects:
+    output: true
+    permalink: /projects/:title
+
+# Excerpt separator
+excerpt_separator: <!--excerpt-->
+
+# Social
+social:
+  atom:
+    label: Atom
+    url: "/atom.xml"
+  rss:
+    label: RSS
+    url: "/rss.xml"
+  twitter:
+    label: Twitter
+    url: "https://twitter.com/luke_hackett"
+  linkedin:
+    label: LinkedIn
+    url: "https://uk.linkedin.com/pub/luke-hackett/82/561/423"
+  github:
+    label: GitHub
+    url: "https://github.com/LukeHackett"
+
+# Atom feed
+feed:
+  path: atom.xml
+
+# Site footer
+footer:
+  copyright: "&copy; 2020 Luke Hackett."
+
+# Discuss
+disqus: 
   embed: "https://lukehackettcom.disqus.com/embed.js"
   count: "//lukehackettcom.disqus.com/count.js"
 
-# social networks
-linkedin: "https://uk.linkedin.com/pub/luke-hackett/82/561/423"
-twitter:  "https://twitter.com/luke_hackett"
-github:   "https://github.com/LukeHackett"
-gravatar: "http://1.gravatar.com/avatar/5063276d68503fad5da5aa860438ca83?size=200"
+# Google Analytics
+google_analytics: UA-156066646-1
 
 # Build settings
 markdown: kramdown
+
+# Jekyll plugins
+plugins:
+  - jekyll-tidy
+  - jekyll-feed
+  - jekyll-paginate-v2
 
 # sass settings
 sass:
   sass_dir: _sass
   style: compressed
-
-# Google Analytics
-google_analytics: UA-89802036-2
