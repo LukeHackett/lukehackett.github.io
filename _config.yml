@@ -32,11 +32,8 @@ navigation:
     url: /about/
 
 # Pagination
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: '/posts/:num/'
-  sort_reverse: true
+paginate: 5
+paginate_path: '/posts/:num/'
 
 # Site Collections
 collections:
@@ -91,7 +88,7 @@ markdown: kramdown
 plugins:
   - jekyll-tidy
   - jekyll-feed
-  - jekyll-paginate-v2
+  - jekyll-paginate
 
 # sass settings
 sass:
