@@ -7,7 +7,7 @@
         {%- if page_url == item.url %}
           {%- assign current = 'active' %}
         {%- endif %}
-        <a class="text-dark subnav-item {{ current }}" href="{{ item.url | absolute_url }}">
+        <a class="text-dark subnav-item {{ current }}" href="{{ item.url | relative_url }}">
           {{ item.label }}
         </a>
       {%- endfor %}

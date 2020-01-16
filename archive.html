@@ -12,7 +12,7 @@ permalink: /archive/
         <small class="text-muted">
           {% include functions/date.html date=post.date %}
         </small>
-        <a href="{{ post.url | absolute_url }}">
+        <a href="{{ post.url | relative_url }}">
           {{ post.title }}
         </a>
       </li>

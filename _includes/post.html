@@ -4,7 +4,7 @@
     {%- if include.type == 'post' %}
       {{ include.post.title }}
     {%- else %}
-      <a href="{{ include.post.url | absolute_url }}">
+      <a href="{{ include.post.url | relative_url }}">
         {{ include.post.title }}
       </a>
     {%- endif %}
