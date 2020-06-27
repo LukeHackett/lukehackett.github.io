@@ -1,15 +1,5 @@
 <!-- Pagination -->
 <div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">
-      Older
-    </a>
-  {% else %}
-    <span class="pagination-item older">
-      Older
-    </span>
-  {% endif %}
-
   {% if paginator.previous_page %}
     {% if paginator.page == paginator.total_pages %}
       <a class="pagination-item newer" href="{{ site.url }}">
@@ -23,6 +13,16 @@
   {% else %}
     <span class="pagination-item newer">
       Newer
+    </span>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">
+      Older
+    </a>
+  {% else %}
+    <span class="pagination-item older">
+      Older
     </span>
   {% endif %}
 </div>
