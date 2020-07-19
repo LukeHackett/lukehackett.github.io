@@ -1,0 +1,31 @@
+<div class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-4 col-md-3">
+      <img src="{{ include.book.image }}" class="card-img" alt="{{ include.book.title }}">
+    </div>
+    <div class="col-8 col-md-9">
+      <div class="card-body">
+        <h5 class="card-title">
+          {{ include.book.title }}
+        </h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+          {{ include.book.author }}, {{ include.book.date }}, {{ include.book.publisher }}
+        </h6>
+        <p class="card-text">
+          {{ include.book.description }}
+        </p>
+        <p class="card-text">
+          <small>
+            Purchase at 
+            {%- for purchase in include.book.purchase %}
+              <a href="{{ purchase.url }}" target="_blank">{{ purchase.store }}</a>
+              {%- if forloop.last == false %}
+                <span> | </span>
+              {%- endif %}
+            {%- endfor %}
+          </small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
