@@ -12,7 +12,12 @@
 
   <!-- Published Date -->
   <span class="post-date">
-    {% include functions/date.html date=include.post.date %}
+	  {%- if include.post.modified_date %}
+	  	Written on {% include functions/date.html date=include.post.date %}, 
+		Last updated on {% include functions/date.html date=include.post.modified_date %}
+	  {%- else %}
+	  	Written on {% include functions/date.html date=include.post.date %}
+		{%- endif %}
   </span>
 
   <!-- Content -->
