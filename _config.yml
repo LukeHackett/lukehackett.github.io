@@ -26,6 +26,8 @@ navigation:
     url: /archive/
   - label: Projects
     url: /projects/
+  - label: Bookshelf
+    url: /bookshelf/
   - label: Travel
     url: /travel/
   - label: About
