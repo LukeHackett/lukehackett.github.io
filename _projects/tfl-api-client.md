@@ -11,4 +11,6 @@ github: https://github.com/LukeHackett/tfl_api_client
 
 This gem aims to provide a simple, programmatic ruby client that allows native ruby applications to seamlessly interact with Transport for London's live APIs.
 
+***Note**: This project is no longer maintained.*
+
 For more details, visit the [Github repository](https://github.com/LukeHackett/tfl_api_client).
