@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+:root {
+  --cypress-vine: #5f6652;
+  --bleached-silk: rgb(243, 243, 241);
+  --footer-color: rgb(255, 255, 255, .5);
+  --footer-link-hover: rgb(255, 255, 255, .75);
+}
+
+.open-link { 
+  font-size: .8rem;
+  line-height: 1.8rem;
+}
+
+body {
+  background-color: var(--cypress-vine);
+  color: var(--bs-white);
+}
+
+.btn-theme {
+  border-radius: 2rem;
+  padding: .75rem 1.5rem;
+  color: var(--bs-black);
+  background-color: var(--bleached-silk);
+  border-color: var(--bleached-silk);
+}
+
+.btn-theme:hover {
+  color: var(--bleached-silk);
+  border-color: var(--bleached-silk);
+}
+
+.btn-theme .link-label,
+.btn-theme .link-icon {
+  font-size: 1rem;
+}
+
+.btn-theme .open-icon {
+  font-size: .8rem;
+  line-height: 1.4rem;
+}
+
+.footer,
+.footer-link {
+  color: var(--footer-color);
+}
+
+.footer-link:hover {
+  color: var(--footer-link-hover);
+}
+

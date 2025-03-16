@@ -1,5 +1,4 @@
-.idea
-*.iws
-_site
-.sass-cache
-.jekyll-metadata
+# Hugo
+.hugo_build.lock
+/public
+/resources

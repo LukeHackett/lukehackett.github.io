@@ -1,0 +1,53 @@
+baseURL: https://lukehackett.com
+languageCode: en-GB
+title: Luke Hackett
+copyright: © 2015 - present, Luke Hackett.
+
+disableKinds:
+  - taxonomy
+  - sitemap
+  - rss
+
+services:
+  googleAnalytics:
+    id: G-L4DMTFW2G1
+
+privacy:
+  googleAnalytics:
+    respectDoNotTrack: true
+
+params:
+  author:
+    name: Luke Hackett
+    gravatar: "//1.gravatar.com/avatar/5063276d68503fad5da5aa860438ca83?size=200"
+    bio: >
+      Luke is a Principal Software Engineer, an avid reader, and a passionate
+      traveler who sometimes shares his thoughts and discoveries on his blog.
+
+menus:
+  links:
+    - name: Github
+      url: "https://github.com/LukeHackett"
+      weight: 1
+      params:
+        icon: fa-brands fa-github
+    - name: Dev Community
+      url: "https://dev.to/lukehackett"
+      weight: 2
+      params:
+        icon: fa-brands fa-dev
+    - name: Credly
+      url: "https://www.credly.com/users/luke-hackett"
+      weight: 3
+      params:
+        icon: fa-solid fa-award
+    - name: LinkedIn
+      url: "https://uk.linkedin.com/pub/luke-hackett/82/561/423"
+      weight: 4
+      params:
+        icon: fa-brands fa-linkedin-in
+    - name: Twitter
+      url: "https://twitter.com/luke_hackett"
+      weight: 5
+      params:
+        icon: fa-brands fa-x-twitter
