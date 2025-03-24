@@ -11,8 +11,8 @@ clean:
 
 .PHONY: run
 run: clean
-	hugo server --openBrowser --gc --cleanDestinationDir --forceSyncStatic --ignoreCache --noHTTPCache 
+	hugo server --openBrowser --gc --cleanDestinationDir --forceSyncStatic --ignoreCache --noHTTPCache
 
 .PHONY: build
 build: clean
-	hugo build --gc
+	hugo build --gc --minify
