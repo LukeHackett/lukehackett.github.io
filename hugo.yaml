@@ -21,29 +21,34 @@ params:
       traveller who shares his thoughts and discoveries on his blog.
 
 menus:
-  links:
+  main:
     - name: Github
       url: "https://github.com/LukeHackett"
-      weight: 1
+      weight: 10
       params:
         icon: fa-brands fa-github
+    - name: LinkedIn
+      url: "https://uk.linkedin.com/pub/luke-hackett/82/561/423"
+      weight: 20
+      params:
+        icon: fa-brands fa-linkedin-in
+    - name: Keynotes & Conferences
+      url: "https://www.youtube.com/playlist?list=PLRw1GYA6f89vSsvNIOmtMR4QV-omxk__S"
+      weight: 30
+      params:
+        icon: fa-brands fa-youtube
+    - name: Twitter
+      url: "https://twitter.com/luke_hackett"
+      weight: 40
+      params:
+        icon: fa-brands fa-x-twitter
     - name: Dev Community
       url: "https://dev.to/lukehackett"
-      weight: 2
+      weight: 50
       params:
         icon: fa-brands fa-dev
     - name: Credly
       url: "https://www.credly.com/users/luke-hackett"
-      weight: 3
+      weight: 60
       params:
         icon: fa-solid fa-award
-    - name: LinkedIn
-      url: "https://uk.linkedin.com/pub/luke-hackett/82/561/423"
-      weight: 4
-      params:
-        icon: fa-brands fa-linkedin-in
-    - name: Twitter
-      url: "https://twitter.com/luke_hackett"
-      weight: 5
-      params:
-        icon: fa-brands fa-x-twitter

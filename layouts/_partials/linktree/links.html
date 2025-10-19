@@ -1,12 +1,12 @@
 <div class="row justify-content-center my-4">
   <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
-    {{ with site.Menus.links }}
+    {{ with site.Menus.main }}
       <div class="d-grid gap-3">
         {{ range . }}
           <a class="btn btn-lg btn-theme" href="{{ .URL }}" target="_blank">
             <div class="d-flex">
               <div class="link-icon">
-                <i class="{{ .Params.Icon }}"></i> 
+                <i class="{{ .Params.Icon }}"></i>
               </div>
               <div class="flex-grow-1 link-label">
                 {{ .Name }}

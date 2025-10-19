@@ -12,9 +12,9 @@
     <base href="{{ .Site.BaseURL }}">
     <link rel="canonical" href="{{ .Permalink }}">
 
-    {{ partial "_default/favicon.html" . }}
-    {{ partial "_default/stylesheet.html" . }}
-    {{ partial "_default/google_analytics.html" . }}
+    {{ partial "head/favicon.html" . }}
+    {{ partial "head/stylesheet.html" . }}
+    {{ partial "head/google_analytics.html" . }}
   </head>
   <body>
     <main class="container">
