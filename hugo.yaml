@@ -17,38 +17,44 @@ params:
     name: Luke Hackett
     gravatar: "//1.gravatar.com/avatar/5063276d68503fad5da5aa860438ca83?size=200"
     bio: >
-      Luke is a Principal Software Engineer, an avid reader, and a passionate
-      traveller who shares his thoughts and discoveries on his blog.
+      Luke is a Principal Software Engineer who enjoys travelling, discovering
+      great food, and building open-source projects. He occasionally shares his
+      thoughts and ideas on his blog.
 
 menus:
   main:
-    - name: Github
-      url: "https://github.com/LukeHackett"
-      weight: 10
-      params:
-        icon: fa-brands fa-github
     - name: LinkedIn
       url: "https://uk.linkedin.com/pub/luke-hackett/82/561/423"
-      weight: 20
+      weight: 10
       params:
         icon: fa-brands fa-linkedin-in
+    - name: Github
+      url: "https://github.com/LukeHackett"
+      weight: 20
+      params:
+        icon: fa-brands fa-github
+    - name: Open Source Projects
+      url: "https://github.com/stars/LukeHackett/lists/open-source-projects"
+      weight: 30
+      params:
+        icon: fa-solid fa-code
     - name: Keynotes & Conferences
       url: "https://www.youtube.com/playlist?list=PLRw1GYA6f89vSsvNIOmtMR4QV-omxk__S"
-      weight: 30
+      weight: 40
       params:
         icon: fa-brands fa-youtube
     - name: Twitter
       url: "https://twitter.com/luke_hackett"
-      weight: 40
+      weight: 50
       params:
         icon: fa-brands fa-x-twitter
     - name: Dev Community
       url: "https://dev.to/lukehackett"
-      weight: 50
+      weight: 60
       params:
         icon: fa-brands fa-dev
     - name: Credly
       url: "https://www.credly.com/users/luke-hackett"
-      weight: 60
+      weight: 70
       params:
         icon: fa-solid fa-award
